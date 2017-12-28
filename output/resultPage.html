@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link href="./css/common.css?v=1" rel="stylesheet">
+	<script src="https://static.nfapp.southcn.com/apptpl/script/openApp.js"></script>
+	<script src="./js/common.js?v=1" type="text/javascript"></script>
+	<title>敲锣打鼓庆元旦</title>
+</head>
+<body class="">
+	<div class="g-body">
+		<div class="hello">
+    <div class="m-head"></div> 
+    <div class="m-body">
+      <div class="u-show-wrap" data-state="true">
+        <div class="u-title">
+          <div class="u-success"></div>
+        </div>
+        <div class="u-getcoins">
+          <div class="t">
+            你的成绩为：{{ coins }}
+          </div>
+          <div class="c">
+            成功获取了 {{ goal }} 分，快来能领取奖品吧
+          </div>
+        </div>
+        <div class="u-getprize">
+          <div class="u-btn u-btn-getprize" @click.native="loadApp">
+            领取礼品
+          </div>
+        </div>
+        <div class="u-btn-box">
+          <div class="u-btn u-btn-again j-goback">
+            再来一次
+          </div>
+          <div class="u-btn u-btn-share j-goshare">
+            分享
+          </div>
+        </div>
+      </div>
+      <div class="u-show-wrap f-hd" data-state="false">
+        <div class="u-title">
+          <div class="u-fail"></div>
+        </div>
+        <div class="u-getcoins">
+          <div class="t">
+            你的成绩为：{{ coins }}
+          </div>
+          <div class="c">
+            成绩必须达到 {{ goal }} 分才能领取奖品
+          </div>
+        </div>
+        
+        <div class="u-btn-box">
+          <div class="u-btn u-btn-again j-goback">
+            再来一次
+          </div>
+          <div class="u-btn u-btn-share j-goshare">
+            分享
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-foot"></div>
+    <div class="dialog f-hd j-cover" >
+	    <div class="cover ">
+	      <div class="dialog-content" >
+	        <div class="m-arrow">
+				    <div class="u-arrow-box">
+				      <span class="u-c">分享出去</span>
+				      <span class="u-c s-main">我的梦想</span>
+				      <i class="u-icon u-icon-arrow"></i>
+				    </div>
+				  </div>
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  </div>
+	<script src="./js/data.js?v=1" type="text/javascript"></script>
+	<script src="./js/result.js?v=1" type="text/javascript"></script>
+</body>
+</html>
